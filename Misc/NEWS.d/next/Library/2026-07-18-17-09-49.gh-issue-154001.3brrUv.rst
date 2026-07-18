@@ -1,2 +1,2 @@
-Fix ``random.Random.binomialvariate()`` raising :exc:`ZeroDivisionError`
-when a random draw is zero.
+Fix :func:`random.binomialvariate` raising :exc:`ZeroDivisionError`
+when :func:`random.random` returns zero.
