@@ -861,6 +861,8 @@ class Random(_random.Random):
             u = random()
             u -= 0.5
             us = 0.5 - _fabs(u)
+            if us == 0.0:
+                continue
             k = _floor((2.0 * a / us + b) * u + c)
             if k < 0 or k > n:
                 continue

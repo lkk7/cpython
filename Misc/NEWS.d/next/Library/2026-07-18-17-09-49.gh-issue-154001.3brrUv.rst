@@ -1,0 +1,2 @@
+Fix :meth:`random.Random.binomialvariate` raising :exc:`ZeroDivisionError`
+when a random draw is zero.
